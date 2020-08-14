@@ -1,9 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
+
 @font-face {
   font-family: "Eduardian";
-  src: url(../_fonts/itcedscr.ttf);
+  src: url(../fonts/itcedscr.ttf);
 }
 
 /* Formatação da página em geral */
@@ -15,7 +16,7 @@
 }
 
 body {
-  background-image: url(../_imagens/fundo-nuvens-rosa-claro-1500.jpg);
+  background-image: url(../imagens/fundo-nuvens-rosa-claro-1500.jpg);
   color: rgba(0, 0, 0, 1);
   width: 85%;
   margin: 0 auto;
@@ -173,15 +174,15 @@ footer .rodape p {
 }
 
 .social a[href*="facebook.com"] {
-  background-image: url(../_imagens/icons8-facebook-48.png);
+  background-image: url(../imagens/icons8-facebook-48.png);
 }
 
 .social a[href*="instagram.com"] {
-  background-image: url(../_imagens/icons8-instagram-48.png);
+  background-image: url(../imagens/icons8-instagram-48.png);
 }
 
 .social a[href*="plus.google.com"] {
-  background-image: url(../_imagens/googleplus.png);
+  background-image: url(../imagens/googleplus.png);
 }
 
 /*    Formatação modelos paineis   */
@@ -262,6 +263,7 @@ div#itens {
   .menu li {
     margin-left: 0;
   }
+
   footer .container {
     height: 7em;
     position: absolute;
@@ -270,15 +272,12 @@ div#itens {
 
 /* SMALL DEVICES - TABLETS*/
 
-@media screen and (min-width: 768px) {
-}
+@media screen and (min-width: 768px) {}
 
 /* MEDIUM DEVICES - TABLETS & DESKTOPS*/
 
-@media screen and (min-width: 960px) {
-}
+@media screen and (min-width: 960px) {}
 
 /* LARGE DEVICES - WIDE SCREENS*/
 
-@media screen and (min-width: 1280px) {
-}
+@media screen and (min-width: 1280px) {}
