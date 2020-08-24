@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
-
 @font-face {
   font-family: "Eduardian";
   src: url(../fonts/itcedscr.ttf);
@@ -13,35 +12,53 @@
   margin: 0;
   padding: 0;
   max-width: 1280px;
-}
-
-body {
-  background-image: url(../imagens/fundo-nuvens-rosa-claro-1500.jpg);
-  color: rgba(0, 0, 0, 1);
-  width: 85%;
   margin: 0 auto;
-  padding: 0;
 }
 
 p {
   font-family: Verdana, Tahoma, sans-serif;
   font-weight: bold;
-  text-align: justify;
+  text-align: left;
+}
+
+h1 {
+  margin-top: 1em;
+  font-size: 2.5em;
+}
+
+h2 {
+  margin-top: 1em;
+  font-size: 2em;
+}
+
+/* Formatação do BODY e do CONTAINER */
+
+body {
+  color: rgba(0, 0, 0, 1);
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+  background-image: url(../imagens/r01-rosa-branca-1.png);
+  background-size: 8em;
+  font-size: 1em;
+}
+
+#container {
+  background-color: #feeff7;
 }
 
 /* Formatação cabeçalho */
 
 .center {
-  display: block;
+  width: 100%;
   margin: 0 auto;
-  width: 90%;
 }
 
 /* Formatação do Menu */
 
 .menu {
   display: block;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -50,7 +67,7 @@ p {
 .menu li {
   position: relative;
   float: left;
-  margin: 1px 6.5px;
+  margin: 1px 0.33%;
   color: black;
   text-align: center;
   border: 1px solid #c0c0c0;
@@ -110,27 +127,6 @@ h2#slogan {
   color: rgba(0, 0, 0, 0.7);
 }
 
-/*  Formatação do contato */
-
-.contatos {
-  font-family: Verdana, Tahoma, sans-serif, sans-serif;
-  font-weight: bolder;
-}
-
-.contatos li {
-  padding: 1%;
-}
-
-.contatos img {
-  margin: 0;
-}
-
-.contatos a {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
-
 /*  Formatação do rodapé */
 
 footer .rodape {
@@ -146,10 +142,21 @@ footer .rodape {
 
 footer .rodape p {
   text-align: center;
-  margin-top: -1.5em;
   font-size: 2em;
   font-family: "Edwardian Script ITC", "Sunshiney";
   color: rgba(0, 0, 0, 0.7);
+  float: left;
+  width: 70%;
+}
+
+#rodape-img {
+  float: left;
+  width: 10%;
+}
+
+#rodape-ul {
+  float: left;
+  width: 20%;
 }
 
 .social li a {
@@ -174,15 +181,34 @@ footer .rodape p {
 }
 
 .social a[href*="facebook.com"] {
-  background-image: url(../imagens/icons8-facebook-48.png);
+  background-image: url(../imagens/icons8-facebook-96.png);
+  background-size: 48px;
 }
 
 .social a[href*="instagram.com"] {
   background-image: url(../imagens/icons8-instagram-48.png);
 }
 
-.social a[href*="plus.google.com"] {
-  background-image: url(../imagens/googleplus.png);
+/*  Formatação FALE CONOSCO, contato */
+
+.contatos {
+  font-family: Verdana, Tahoma, sans-serif, sans-serif;
+  font-weight: bolder;
+}
+
+.contatos li {
+  padding: 1%;
+  list-style: none;
+}
+
+.contatos img {
+  margin: 0;
+}
+
+.contatos a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 /*    Formatação modelos paineis   */
@@ -190,7 +216,7 @@ footer .rodape p {
 .painel {
   margin: 0.3em;
   padding: 1em;
-  width: 49%;
+  width: 48%;
   border-radius: 4px;
   box-shadow: inset 1px 1px 4px #999;
 }
@@ -206,7 +232,7 @@ footer .rodape p {
 }
 
 .painel h2 {
-  font-size: 2.4em;
+  font-size: 2.3rem;
   font-weight: bold;
   text-transform: uppercase;
   text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
@@ -216,12 +242,7 @@ footer .rodape p {
   content: "\2756";
   padding-right: 0.2em;
   opacity: 0.8;
-  font-size: 2em;
-}
-
-.painel ul {
-  padding: 0.6em;
-  margin-bottom: 0;
+  font-size: 1.5em;
 }
 
 .painel li {
@@ -240,7 +261,7 @@ footer .rodape p {
 
 .painel a {
   color: #333;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -253,31 +274,149 @@ footer .rodape p {
 
 div#itens {
   clear: both;
+  margin-left: 1em;
 }
 
 /* ========== MOBILE FIRST ==========*/
 
-/* SMALL DEVICES - SMARTPHONES */
+/* SMALL DEVICES - SMARTPHONES (com 360px a 480px)*/
 
-@media screen and (min-width: 480px) {
-  .menu li {
-    margin-left: 0;
+@media screen and (max-width: 480px) and (min-width: 360px) {
+  h1 {
+    font-size: 2em;
   }
-
-  footer .container {
-    height: 7em;
-    position: absolute;
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  .menu li {
+    font-size: 8px;
+  }
+  h2#slogan {
+    font-size: 1em;
+  }
+  footer .rodape p {
+    font-size: 0.8em;
+    width: 80%;
+    margin-top: 3%;
+    clear: right;
+  }
+  #rodape-ul {
+    display: none;
+    width: 0%;
+  }
+  #rodape-img {
+    float: left;
+    width: 20%;
+  }
+  .contatos li {
+    font-size: 0.8em;
+  }
+  .painel {
+    width: 96%;
+  }
+  .painel h2 {
+    font-size: 1.2rem;
+  }
+  .painel h2:before {
+    display: none;
+  }
+  .painel li {
+    width: 27%;
+    margin: 0.4em;
+  }
+  .painel a {
+    font-size: 1em;
   }
 }
 
-/* SMALL DEVICES - TABLETS*/
+/* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
 
-@media screen and (min-width: 768px) {}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .menu li {
+    font-size: 10px;
+  }
+  h2#slogan {
+    font-size: 1.5em;
+  }
+  footer .rodape p {
+    font-size: 1em;
+    width: 80%;
+    margin-top: 2%;
+  }
+  #rodape-ul {
+    display: none;
+    width: 0%;
+  }
+  .contatos li {
+    font-size: 0.8em;
+  }
+  .painel {
+    width: 96%;
+  }
+  .painel h2 {
+    font-size: 1.8rem;
+  }
+  .painel h2:before {
+    display: none;
+  }
+  .painel li {
+    width: 28%;
+    margin: 0.4em;
+  }
+  .painel a {
+    font-size: 1em;
+  }
+}
 
-/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+/* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
 
-@media screen and (min-width: 960px) {}
+@media screen and (max-width: 960px) and (min-width: 769px) {
+  footer .rodape p {
+    font-size: 1.5em;
+  }
+  h2#slogan {
+    font-size: 2em;
+  }
+  .painel h2 {
+    font-size: 2rem;
+  }
+  .painel h2:before {
+    content: "\2756";
+    padding-right: 0.2em;
+    opacity: 0.8;
+    font-size: 1.8em;
+  }
+  .painel li {
+    width: 28%;
+    margin: 0.2em;
+  }
+  .painel a {
+    font-size: 1em;
+  }
+}
 
-/* LARGE DEVICES - WIDE SCREENS*/
+/* LARGE DEVICES - WIDE SCREENS  (desktops com 960px a 1280px)*/
 
-@media screen and (min-width: 1280px) {}
+@media screen and (max-width: 1280px) and (min-width: 961px) {
+  .painel li {
+    width: 28%;
+    margin: 0.3em;
+  }
+  .painel a {
+    font-size: 1em;
+  }
+}
+
+/* Dispositivos extra large (desktops grandes com 1280px ou mais) */
+
+@media screen and (max-width: 1440px) and (min-width: 1281px) {
+}
