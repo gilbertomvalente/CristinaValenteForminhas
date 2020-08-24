@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
+
 @font-face {
   font-family: "Eduardian";
   src: url(../fonts/itcedscr.ttf);
@@ -38,8 +39,7 @@ body {
   width: 85%;
   margin: 0 auto;
   padding: 0;
-  background-image: url(../imagens/r01-rosa-branca-1.png);
-  background-size: 8em;
+  background-color: #fffae8;
   font-size: 1em;
 }
 
@@ -285,48 +285,61 @@ div#itens {
   h1 {
     font-size: 2em;
   }
+
   h2 {
     font-size: 1.5em;
   }
+
   p {
     font-size: 0.8em;
   }
+
   .menu li {
     font-size: 8px;
   }
+
   h2#slogan {
     font-size: 1em;
   }
+
   footer .rodape p {
     font-size: 0.8em;
     width: 80%;
     margin-top: 3%;
     clear: right;
   }
+
   #rodape-ul {
     display: none;
     width: 0%;
   }
+
   #rodape-img {
     float: left;
     width: 20%;
   }
+
   .contatos li {
     font-size: 0.8em;
   }
+
   .painel {
     width: 96%;
   }
+
   .painel h2 {
     font-size: 1.2rem;
   }
+
   .painel h2:before {
     display: none;
   }
+
   .painel li {
     width: 27%;
     margin: 0.4em;
   }
+
   .painel a {
     font-size: 1em;
   }
@@ -338,40 +351,51 @@ div#itens {
   h1 {
     font-size: 2em;
   }
+
   h2 {
     font-size: 1.5em;
   }
+
   .menu li {
     font-size: 10px;
   }
+
   h2#slogan {
     font-size: 1.5em;
   }
+
   footer .rodape p {
     font-size: 1em;
     width: 80%;
     margin-top: 2%;
   }
+
   #rodape-ul {
     display: none;
     width: 0%;
   }
+
   .contatos li {
     font-size: 0.8em;
   }
+
   .painel {
     width: 96%;
   }
+
   .painel h2 {
     font-size: 1.8rem;
   }
+
   .painel h2:before {
     display: none;
   }
+
   .painel li {
     width: 28%;
     margin: 0.4em;
   }
+
   .painel a {
     font-size: 1em;
   }
@@ -383,22 +407,27 @@ div#itens {
   footer .rodape p {
     font-size: 1.5em;
   }
+
   h2#slogan {
     font-size: 2em;
   }
+
   .painel h2 {
     font-size: 2rem;
   }
+
   .painel h2:before {
     content: "\2756";
     padding-right: 0.2em;
     opacity: 0.8;
     font-size: 1.8em;
   }
+
   .painel li {
     width: 28%;
     margin: 0.2em;
   }
+
   .painel a {
     font-size: 1em;
   }
@@ -411,6 +440,7 @@ div#itens {
     width: 28%;
     margin: 0.3em;
   }
+
   .painel a {
     font-size: 1em;
   }
@@ -418,5 +448,4 @@ div#itens {
 
 /* Dispositivos extra large (desktops grandes com 1280px ou mais) */
 
-@media screen and (max-width: 1440px) and (min-width: 1281px) {
-}
+@media screen and (max-width: 1440px) and (min-width: 1281px) {}
